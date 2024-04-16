@@ -1,0 +1,24 @@
+﻿@model List<WebApplication1.Models.PersonaModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Identificacion</th>
+        <th>Nombre</th>
+    </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Identificacion</td>
+                    <td>@item.Nombre</td>
+                </tr>
+            }
+        </tbody>
+</table>
+
